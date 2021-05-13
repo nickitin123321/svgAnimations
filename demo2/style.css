@@ -1,0 +1,20 @@
+rect {
+  transform-origin: center;
+}
+.anirect {
+  animation: rect_anim 6s linear infinite;
+  animation-fill-mode: forwards;
+}
+svg {
+  display: block;
+  margin: auto;
+}
+
+@keyframes rect_anim {
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
